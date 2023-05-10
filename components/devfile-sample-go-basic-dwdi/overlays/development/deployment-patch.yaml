@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-go-basic-dwdi
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads-stage/mfaisal2-tenant/my-app/devfile-sample-go-basic-dwdi@sha256:9c689b1df2c71a6f5da9210d27fda02dd31dcbbcf94a96220dbab3c8d874c40d
+        name: my-go
+        resources: {}
+status: {}
